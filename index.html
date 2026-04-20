@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gelly Skin Studio — Centro de estética avanzada en Lima con 9 años de experiencia. Tratamientos faciales, corporales, diseño de cejas y más. ¡Agenda tu cita hoy!">
+  <meta name="keywords" content="estética Lima, tratamientos faciales, limpieza facial, diseño de cejas, vacuoterapia, spa Lima, cuidado de la piel">
+  <meta name="author" content="Gelly Skin Studio">
+  <meta property="og:title" content="Gelly Skin Studio — Elevamos la confianza que hay en ti">
+  <meta property="og:description" content="Centro de estética avanzada en Lima. 9 años expertos en el cuidado de tu piel y tu imagen.">
+  <meta property="og:type" content="website">
+  <title>Gelly Skin Studio — Centro de Estética Avanzada en Lima</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%234A5D3C'/><text x='50' y='65' text-anchor='middle' fill='%23D4BA7A' font-family='serif' font-size='50' font-weight='bold'>G</text></svg>">
+</head>
+<body>
+
+<!-- Loading Overlay -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loader">
+    <div class="loader-logo">Gelly</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo" id="logo">
+      <div class="logo-icon"></div>
+      <div class="logo-text">
+        <span class="brand">Gelly</span>
+        <span class="tagline">Skin Studio</span>
+      </div>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#tratamientos" class="nav-link">Tratamientos</a>
+      <a href="#resultados" class="nav-link">Galería</a>
+      <a href="#nosotros" class="nav-link">Nosotros</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <a href="#agendar" class="btn-cta">Agendar Cita</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO SECTION ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge fade-up">
+        <div class="dot"></div>
+        <span>Centro de Estética Avanzada</span>
+      </div>
+      <h1 class="hero-title fade-up">
+        Elevamos la <span class="accent">confianza</span> que hay en ti
+        <span class="gold-line"></span>
+      </h1>
+      <p class="hero-subtitle fade-up">
+        9 años expertos en el cuidado de tu piel y tu imagen en Lima. 
+        Tratamientos personalizados con tecnología de vanguardia.
+      </p>
+      <div class="hero-buttons fade-up">
+        <a href="#tratamientos" class="btn-primary">
+          Ver Tratamientos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#agendar" class="btn-secondary">Reservar Cita</a>
+      </div>
+      <div class="hero-stats fade-up">
+        <div class="stat-item">
+          <div class="stat-number" data-count="9">0</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="3000">0</div>
+          <div class="stat-label">Clientas felices</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="50">0</div>
+          <div class="stat-label">Tratamientos</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-wrapper fade-up">
+      <div class="hero-image-main">
+        <img src="img/hero.png" alt="Tratamiento facial profesional en Gelly Skin Studio" loading="eager">
+      </div>
+      <div class="hero-floating-card">
+        <div class="floating-icon">✨</div>
+        <div class="floating-text">
+          <div class="ft-title">+98% Satisfacción</div>
+          <div class="ft-desc">Resultados comprobados</div>
+        </div>
+      </div>
+      <div class="hero-accent-circle"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES SECTION ============ -->
+<section class="services" id="tratamientos">
+  <div class="services-header fade-up">
+    <div class="section-label">Nuestros Tratamientos</div>
+    <h2 class="section-title">Cuidamos cada detalle de tu belleza</h2>
+    <p class="section-subtitle">Más de 50 servicios personalizados con productos de alta gama y la tecnología más avanzada del mercado.</p>
+  </div>
+
+  <!-- Service Category Tabs -->
+  <div class="service-tabs-container container">
+    <div class="service-tabs fade-up" id="serviceTabs">
+      <button class="service-tab active" data-category="faciales">🧖‍♀️ Faciales</button>
+      <button class="service-tab" data-category="mirada">👁️ Mirada</button>
+      <button class="service-tab" data-category="masajes">💆 Masajes</button>
+      <button class="service-tab" data-category="corporales">🌿 Corporales</button>
+      <button class="service-tab" data-category="manos">💅 Manos</button>
+      <button class="service-tab" data-category="pies">🦶 Pies</button>
+      <button class="service-tab" data-category="cabello">✂️ Cabello</button>
+    </div>
+  </div>
+
+  <!-- Category Banner + Services List -->
+  <div class="service-category-display container">
+    <!-- FACIALES -->
+    <div class="service-category active" id="cat-faciales">
+      <div class="service-category-hero fade-up">
+        <img src="img/service-facial.png" alt="Tratamientos Faciales" loading="lazy">
+        <div class="service-category-overlay">
+          <h3>Tratamientos Faciales</h3>
+          <p>Limpieza, hidratación, rejuvenecimiento y tecnología avanzada para tu rostro.</p>
+        </div>
+      </div>
+      <div class="service-list fade-up">
+        <div class="service-list-item"><span class="sli-name">Limpieza Facial Clínica</span><span class="sli-desc">La limpieza express que necesitas</span><span class="sli-price">S/.70</span></div>
+        <div class="service-list-item"><span class="sli-name">Limpieza Facial Profunda</span><span class="sli-desc">Extracción de comedones y relajación total</span><span class="sli-price">S/.120</span></div>
+        <div class="service-list-item"><span class="sli-name">Dermaplaning</span><span class="sli-desc">Remueve el vello y células muertas en una sesión</span><span class="sli-price">S/.150</span></div>
+        <div class="service-list-item"><span class="sli-name">Peeling</span><span class="sli-desc">Luce una piel más luminosa y renovada</span><span class="sli-price">S/.150</span></div>
+        <div class="service-list-item"><span class="sli-name">Tratamiento Despigmentante</span><span class="sli-desc">Atenúa manchas y unifica el tono de la piel</span><span class="sli-price">S/.150</span></div>
+        <div class="service-list-item"><span class="sli-name">Tratamiento Antiacné</span><span class="sli-desc">Reduce brotes, controla grasa y mejora la piel</span><span class="sli-price">S/.150</span></div>
+        <div class="service-list-item"><span class="sli-name">Tratamiento Antiage</span><span class="sli-desc">Reduce arrugas, líneas finas y mejora la textura</span><span class="sli-price">S/.150</span></div>
+        <div class="service-list-item"><span class="sli-name">Ultra Glow</span><span class="sli-desc">Hidratación profunda con mascarillas hidroplásticas</span><span class="sli-price">S/.169</span></div>
+        <div class="service-list-item"><span class="sli-name">Dermapen</span><span class="sli-desc">Estimula producción de colágeno con micro agujas</span><span class="sli-price">S/.180</span></div>
+        <div class="service-list-item"><span class="sli-name">Facial Premium</span><span class="sli-desc">Coctel enzimático que renueva tu rostro</span><span class="sli-price">S/.199</span></div>
+        <div class="service-list-item"><span class="sli-name">Antiedad Premium</span><span class="sli-desc">Reduce signos del envejecimiento y flacidez</span><span class="sli-price">S/.199</span></div>
+        <div class="service-list-item highlight"><span class="sli-name">Paquete Despigmentante</span><span class="sli-desc">3 sesiones — Atenúa manchas y unifica tu tono natural</span><span class="sli-price">S/.400</span></div>
+      </div>
+    </div>
+
+    <!-- MIRADA -->
+    <div class="service-category" id="cat-mirada">
+      <div class="service-category-hero fade-up">
+        <img src="img/service-mirada.png" alt="Tratamientos de Mirada" loading="lazy">
+        <div class="service-category-overlay">
+          <h3>Mirada</h3>
+          <p>Realza tu mirada con nuestros tratamientos de cejas, pestañas e hidralips.</p>
+        </div>
+      </div>
+      <div class="service-list fade-up">
+        <div class="service-list-item"><span class="sli-name">Laminado de Cejas</span><span class="sli-desc">Dale volumen y dimensión a tus cejas</span><span class="sli-price">S/.30</span></div>
+        <div class="service-list-item"><span class="sli-name">Lifting de Pestañas</span><span class="sli-desc">Realza naturalmente tu mirada</span><span class="sli-price">S/.50</span></div>
+        <div class="service-list-item"><span class="sli-name">Hidralips</span><span class="sli-desc">El brillo natural que necesitan tus labios</span><span class="sli-price">S/.60</span></div>
+        <div class="service-list-item"><span class="sli-name">Depilación Facial</span><span class="sli-desc">Tu piel libre de vellos y con tono uniforme</span><span class="sli-price">Desde S/.10</span></div>
+      </div>
+    </div>
+
+    <!-- MASAJES -->
+    <div class="service-category" id="cat-masajes">
+      <div class="service-category-hero fade-up">
+        <img src="img/service-masajes.png" alt="Masajes Relajantes" loading="lazy">
+        <div class="service-category-overlay">
+          <h3>Masajes</h3>
+          <p>Relajación total para cuerpo y mente con nuestras técnicas profesionales.</p>
+        </div>
+      </div>
+      <div class="service-list fade-up">
+        <div class="service-list-item"><span class="sli-name">Masajes Relajantes</span><span class="sli-desc">Evita el estrés y mejora la circulación</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Masajes con Piedras Calientes</span><span class="sli-desc">O con compresas para mayor relajación</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Masajes Descontracturantes</span><span class="sli-desc">Alivia la tensión muscular</span><span class="sli-price">S/.90</span></div>
+      </div>
+    </div>
+
+    <!-- CORPORALES -->
+    <div class="service-category" id="cat-corporales">
+      <div class="service-category-hero fade-up">
+        <img src="img/service-corporal.png" alt="Tratamientos Corporales" loading="lazy">
+        <div class="service-category-overlay">
+          <h3>Tratamientos Corporales</h3>
+          <p>Moldea, tonifica y cuida tu cuerpo con tratamientos de última generación.</p>
+        </div>
+      </div>
+      <div class="service-list fade-up">
+        <div class="service-list-item"><span class="sli-name">Reductores</span><span class="sli-desc">Reduce cm y moldea tu figura</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Reafirmantes</span><span class="sli-desc">Tu piel más tersa y libre de flacidez</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Anticelulítico</span><span class="sli-desc">Dile adiós a la piel de naranja</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Glúteos Up</span><span class="sli-desc">Glúteos firmes y tonificados</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Aclarado de Zonas Oscuras</span><span class="sli-desc">Despigmenta la piel oscurecida</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Fangoterapia</span><span class="sli-desc">Hidrata, aclara e ilumina tu piel</span><span class="sli-price">S/.120</span></div>
+        <div class="service-list-item"><span class="sli-name">Exfoliación Corporal</span><span class="sli-desc">Elimina células muertas</span><span class="sli-price">S/.120</span></div>
+        <div class="service-list-item"><span class="sli-name">Remoción de Acrocordones</span><span class="sli-desc">Dile adiós a ese molesto lunar</span><span class="sli-price">S/.120/sesión</span></div>
+        <div class="service-list-item"><span class="sli-name">Depilación Corporal</span><span class="sli-desc">Tu piel suave y libre de vellos</span><span class="sli-price">Desde S/.20</span></div>
+      </div>
+    </div>
+
+    <!-- MANOS -->
+    <div class="service-category" id="cat-manos">
+      <div class="service-category-hero fade-up">
+        <img src="img/service-manos.png" alt="Manicure" loading="lazy">
+        <div class="service-category-overlay">
+          <h3>Manos</h3>
+          <p>Manicure profesional, esmaltado y tratamientos para uñas perfectas.</p>
+        </div>
+      </div>
+      <div class="service-list fade-up">
+        <div class="service-list-item"><span class="sli-name">Tradicional</span><span class="sli-desc">Limpieza de cutículas y esmaltado clásico</span><span class="sli-price">S/.20</span></div>
+        <div class="service-list-item"><span class="sli-name">Semi Permanente</span><span class="sli-desc">Manicura rusa y esmaltado más duradero</span><span class="sli-price">S/.30</span></div>
+        <div class="service-list-item"><span class="sli-name">Rubber</span><span class="sli-desc">Nivelación y fuerza de tu uña natural</span><span class="sli-price">S/.50</span></div>
+        <div class="service-list-item"><span class="sli-name">Hidratación Spa</span><span class="sli-desc">Relajación con parafina y masaje</span><span class="sli-price">S/.50</span></div>
+        <div class="service-list-item"><span class="sli-name">Soft Gel</span><span class="sli-desc">Uñas postizas, listas para lucir</span><span class="sli-price">S/.60</span></div>
+        <div class="service-list-item"><span class="sli-name">Poligel o Acrílicas</span><span class="sli-desc">Dale a tus uñas el largo que desees</span><span class="sli-price">S/.70</span></div>
+      </div>
+    </div>
+
+    <!-- PIES -->
+    <div class="service-category" id="cat-pies">
+      <div class="service-category-hero fade-up">
+        <img src="img/service-pies.png" alt="Pedicure" loading="lazy">
+        <div class="service-category-overlay">
+          <h3>Pies</h3>
+          <p>Pedicure profesional y tratamientos especializados para pies saludables.</p>
+        </div>
+      </div>
+      <div class="service-list fade-up">
+        <div class="service-list-item"><span class="sli-name">Tradicional</span><span class="sli-desc">Limpieza de cutículas y esmaltado clásico en pies sanos</span><span class="sli-price">S/.40</span></div>
+        <div class="service-list-item"><span class="sli-name">Semi Permanente</span><span class="sli-desc">Pedicura rusa y esmaltado más duradero</span><span class="sli-price">S/.50</span></div>
+        <div class="service-list-item"><span class="sli-name">Corte de Uñas</span><span class="sli-desc">Tus pies sanos y limpios</span><span class="sli-price">S/.50</span></div>
+        <div class="service-list-item"><span class="sli-name">Retiro de Uñeros</span><span class="sli-desc">Alivia la inflamación por un mal corte</span><span class="sli-price">S/.50</span></div>
+        <div class="service-list-item"><span class="sli-name">Tratamiento Antifúngico</span><span class="sli-desc">No más uñas engrosadas</span><span class="sli-price">S/.70</span></div>
+        <div class="service-list-item"><span class="sli-name">Hidratación Spa</span><span class="sli-desc">Relajación con parafina y masaje para tus pies</span><span class="sli-price">S/.80</span></div>
+      </div>
+    </div>
+
+    <!-- CABELLO -->
+    <div class="service-category" id="cat-cabello">
+      <div class="service-category-hero fade-up">
+        <img src="img/service-cabello.png" alt="Tratamientos Capilares" loading="lazy">
+        <div class="service-category-overlay">
+          <h3>Cabello</h3>
+          <p>Corte, color, tratamientos y peinados para un cabello espectacular.</p>
+        </div>
+      </div>
+      <div class="service-list fade-up">
+        <div class="service-list-item"><span class="sli-name">Corte</span><span class="sli-desc">Adiós puntas abiertas, hola nuevo look</span><span class="sli-price">S/.25</span></div>
+        <div class="service-list-item"><span class="sli-name">Cepillado o Planchado</span><span class="sli-desc">Dale movimiento y estilo a tu cabello</span><span class="sli-price">S/.25</span></div>
+        <div class="service-list-item"><span class="sli-name">Peinados</span><span class="sli-desc">Para ocasiones especiales o mimarte un poco</span><span class="sli-price">S/.50</span></div>
+        <div class="service-list-item"><span class="sli-name">Retoque de Raíces</span><span class="sli-desc">Dar color al crecimiento de cabello</span><span class="sli-price">S/.60</span></div>
+        <div class="service-list-item"><span class="sli-name">Tratamientos Capilares</span><span class="sli-desc">Reparación, hidratación o nutrición capilar</span><span class="sli-price">S/.70</span></div>
+        <div class="service-list-item"><span class="sli-name">Tinte</span><span class="sli-desc">Cambia el tono de tu cabello</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Botox Capilar</span><span class="sli-desc">Brillo y control de frizz</span><span class="sli-price">S/.80</span></div>
+        <div class="service-list-item"><span class="sli-name">Baño de Color</span><span class="sli-desc">Reaviva y matiza tu color</span><span class="sli-price">S/.90</span></div>
+        <div class="service-list-item"><span class="sli-name">Laceados</span><span class="sli-desc">Termoactivos o permanentes</span><span class="sli-price">S/.150</span></div>
+        <div class="service-list-item"><span class="sli-name">Morena Iluminada</span><span class="sli-desc">Un cambio sutil y encantador</span><span class="sli-price">S/.180</span></div>
+        <div class="service-list-item"><span class="sli-name">Mechas Balayage</span><span class="sli-desc">Mechas con efecto difuminado</span><span class="sli-price">S/.250</span></div>
+        <div class="service-list-item"><span class="sli-name">Babylights</span><span class="sli-desc">Crean un efecto de luz natural</span><span class="sli-price">S/.250</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING SECTION ============ -->
+<section class="booking" id="agendar">
+  <div class="booking-inner">
+    <div class="booking-info fade-up">
+      <div class="section-label">Agenda tu Cita</div>
+      <h2 class="section-title">Reserva en 3 simples pasos</h2>
+      <p class="section-subtitle">Tu experiencia de bienestar comienza aquí. Elige tu tratamiento, selecciona tu horario y confirma. ¡Así de fácil!</p>
+      <div class="booking-features">
+        <div class="booking-feature">
+          <div class="booking-feature-icon">⚡</div>
+          <div class="booking-feature-text">
+            <h4>Rápido y Sencillo</h4>
+            <p>Reserva tu cita en menos de 2 minutos.</p>
+          </div>
+        </div>
+        <div class="booking-feature">
+          <div class="booking-feature-icon">📅</div>
+          <div class="booking-feature-text">
+            <h4>Horarios Flexibles</h4>
+            <p>Lun-Vie 10:30am a 9pm, Sáb desde 9am.</p>
+          </div>
+        </div>
+        <div class="booking-feature">
+          <div class="booking-feature-icon">💬</div>
+          <div class="booking-feature-text">
+            <h4>Confirmación Inmediata</h4>
+            <p>Recibe tu confirmación por WhatsApp al instante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="booking-widget fade-up" id="bookingWidget">
+      <!-- Steps Indicator -->
+      <div class="booking-steps">
+        <div class="step active" data-step="1">
+          <div class="step-circle">1</div>
+          <div class="step-label">Servicio</div>
+        </div>
+        <div class="step" data-step="2">
+          <div class="step-circle">2</div>
+          <div class="step-label">Fecha y Hora</div>
+        </div>
+        <div class="step" data-step="3">
+          <div class="step-circle">3</div>
+          <div class="step-label">Confirmar</div>
+        </div>
+      </div>
+
+      <!-- Step 1: Service Selection -->
+      <div class="step-content active" id="step1">
+        <div class="service-select-grid">
+          <div class="service-option" data-service="Limpieza Facial Clínica" data-price="S/.70">
+            <div class="service-option-icon">🧖‍♀️</div>
+            <div class="service-option-name">Limpieza Facial Clínica</div>
+            <div class="service-option-price">S/.70</div>
+          </div>
+          <div class="service-option" data-service="Limpieza Facial Profunda" data-price="S/.120">
+            <div class="service-option-icon">✨</div>
+            <div class="service-option-name">Limpieza Facial Profunda</div>
+            <div class="service-option-price">S/.120</div>
+          </div>
+          <div class="service-option" data-service="Facial Premium" data-price="S/.199">
+            <div class="service-option-icon">💎</div>
+            <div class="service-option-name">Facial Premium</div>
+            <div class="service-option-price">S/.199</div>
+          </div>
+          <div class="service-option" data-service="Lifting de Pestañas" data-price="S/.50">
+            <div class="service-option-icon">👁️</div>
+            <div class="service-option-name">Lifting de Pestañas</div>
+            <div class="service-option-price">S/.50</div>
+          </div>
+          <div class="service-option" data-service="Masaje Relajante" data-price="S/.80">
+            <div class="service-option-icon">💆</div>
+            <div class="service-option-name">Masaje Relajante</div>
+            <div class="service-option-price">S/.80</div>
+          </div>
+          <div class="service-option" data-service="Manicure Semi Permanente" data-price="S/.30">
+            <div class="service-option-icon">💅</div>
+            <div class="service-option-name">Manicure Semi Permanente</div>
+            <div class="service-option-price">S/.30</div>
+          </div>
+          <div class="service-option" data-service="Corte de Cabello" data-price="S/.25">
+            <div class="service-option-icon">✂️</div>
+            <div class="service-option-name">Corte de Cabello</div>
+            <div class="service-option-price">S/.25</div>
+          </div>
+          <div class="service-option" data-service="Mechas Balayage" data-price="S/.250">
+            <div class="service-option-icon">🌟</div>
+            <div class="service-option-name">Mechas Balayage</div>
+            <div class="service-option-price">S/.250</div>
+          </div>
+        </div>
+        <button class="btn-step" id="btnStep1Next" disabled>Siguiente — Elige Fecha</button>
+      </div>
+
+      <!-- Step 2: Date & Time -->
+      <div class="step-content" id="step2">
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <button class="calendar-nav" id="calPrev" aria-label="Mes anterior">‹</button>
+            <h4 id="calMonthYear"></h4>
+            <button class="calendar-nav" id="calNext" aria-label="Mes siguiente">›</button>
+          </div>
+          <div class="calendar-days-header">
+            <div class="calendar-day-name">Lun</div>
+            <div class="calendar-day-name">Mar</div>
+            <div class="calendar-day-name">Mié</div>
+            <div class="calendar-day-name">Jue</div>
+            <div class="calendar-day-name">Vie</div>
+            <div class="calendar-day-name">Sáb</div>
+            <div class="calendar-day-name">Dom</div>
+          </div>
+          <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+        <div class="time-slots-container" id="timeSlotsContainer" style="display:none;">
+          <h4>Horarios disponibles</h4>
+          <div class="time-slots-grid" id="timeSlotsGrid"></div>
+        </div>
+        <button class="btn-step" id="btnStep2Next" disabled>Siguiente — Confirmar</button>
+        <button class="btn-back" id="btnStep2Back">← Volver al paso anterior</button>
+      </div>
+
+      <!-- Step 3: Confirmation -->
+      <div class="step-content" id="step3">
+        <div class="confirmation-card">
+          <div class="confirmation-row">
+            <span class="label">Servicio</span>
+            <span class="value" id="confirmService">—</span>
+          </div>
+          <div class="confirmation-row">
+            <span class="label">Fecha</span>
+            <span class="value" id="confirmDate">—</span>
+          </div>
+          <div class="confirmation-row">
+            <span class="label">Hora</span>
+            <span class="value" id="confirmTime">—</span>
+          </div>
+          <div class="confirmation-row">
+            <span class="label">Precio referencial</span>
+            <span class="value" id="confirmPrice">—</span>
+          </div>
+        </div>
+        <div class="confirmation-form">
+          <input type="text" class="form-input" id="confirmName" placeholder="Tu nombre completo" required>
+          <input type="tel" class="form-input" id="confirmPhone" placeholder="Número de WhatsApp (ej: 999 888 777)" required>
+          <button class="btn-step" id="btnConfirm">
+            Confirmar Cita por WhatsApp
+          </button>
+        </div>
+        <button class="btn-back" id="btnStep3Back">← Volver al paso anterior</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY SECTION ============ -->
+<section class="gallery" id="resultados">
+  <div class="gallery-header fade-up">
+    <div class="section-label">Resultados Reales</div>
+    <h2 class="section-title">Nuestro trabajo habla por sí solo</h2>
+    <p class="section-subtitle">Descubre las transformaciones que hemos logrado con nuestras clientas.</p>
+  </div>
+  <div class="gallery-carousel">
+    <div class="gallery-track" id="galleryTrack">
+      <div class="gallery-card fade-up">
+        <img src="img/gallery-1.png" alt="Resultado de limpieza facial - Antes y Después" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="gallery-card-label">Antes & Después</span>
+          <div class="gallery-card-title">Limpieza Facial Profunda</div>
+        </div>
+      </div>
+      <div class="gallery-card fade-up">
+        <img src="img/gallery-2.png" alt="Resultado de diseño de cejas - Antes y Después" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="gallery-card-label">Antes & Después</span>
+          <div class="gallery-card-title">Diseño de Cejas</div>
+        </div>
+      </div>
+      <div class="gallery-card fade-up">
+        <img src="img/gallery-3.png" alt="Resultado de tratamiento facial - Antes y Después" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="gallery-card-label">Antes & Después</span>
+          <div class="gallery-card-title">Hidratación Intensiva</div>
+        </div>
+      </div>
+      <div class="gallery-card fade-up">
+        <img src="img/service-facial.png" alt="Tratamiento facial profesional" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="gallery-card-label">Tratamiento</span>
+          <div class="gallery-card-title">Facial Rejuvenecedor</div>
+        </div>
+      </div>
+      <div class="gallery-card fade-up">
+        <img src="img/service-mirada.png" alt="Diseño de cejas profesional" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="gallery-card-label">Eye Beauty</span>
+          <div class="gallery-card-title">Lifting de Pestañas</div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-controls">
+      <button class="gallery-btn" id="galleryPrev" aria-label="Anterior">‹</button>
+      <button class="gallery-btn" id="galleryNext" aria-label="Siguiente">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT SECTION ============ -->
+<section class="about" id="nosotros">
+  <div class="about-inner">
+    <div class="about-image-wrapper slide-left">
+      <img src="img/about-studio.png" alt="Interior del estudio Gelly Skin Studio en Lima" loading="lazy">
+      <div class="about-image-badge">
+        <div class="badge-number">9+</div>
+        <div class="badge-text">Años de experiencia</div>
+      </div>
+    </div>
+    <div class="about-content slide-right">
+      <div class="section-label">Sobre Nosotros</div>
+      <h2 class="section-title">Donde la ciencia se encuentra con la belleza</h2>
+      <p class="about-text">
+        En Gelly Skin Studio combinamos la pasión por el cuidado de la piel con las técnicas más avanzadas del mercado. 
+        Con más de 9 años de experiencia en Lima, nos hemos consolidado como un referente en estética avanzada, 
+        ofreciendo tratamientos personalizados que potencian la belleza natural de cada clienta.
+      </p>
+      <p class="about-text">
+        Nuestro compromiso es brindarte una experiencia premium en un espacio diseñado para tu confort y bienestar, 
+        utilizando productos de alta gama y equipos de última generación.
+      </p>
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <span class="hi-icon">🏆</span>
+          <span class="hi-text">Productos premium</span>
+        </div>
+        <div class="highlight-item">
+          <span class="hi-icon">🔬</span>
+          <span class="hi-text">Tecnología avanzada</span>
+        </div>
+        <div class="highlight-item">
+          <span class="hi-icon">🌿</span>
+          <span class="hi-text">Ambiente acogedor</span>
+        </div>
+        <div class="highlight-item">
+          <span class="hi-icon">💝</span>
+          <span class="hi-text">Atención personalizada</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonios">
+  <div class="testimonials-header fade-up">
+    <div class="section-label">Testimonios</div>
+    <h2 class="section-title">Lo que dicen nuestras clientas</h2>
+    <p class="section-subtitle">La satisfacción de nuestras clientas es nuestro mejor logro.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <p class="testimonial-text">"Mi piel nunca se había visto tan bien. Después de la limpieza facial con Gelly, la diferencia fue impresionante. ¡100% recomendado!"</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">ML</div>
+        <div class="testimonial-info">
+          <div class="ti-name">María López</div>
+          <div class="ti-service">Limpieza Facial Profunda</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <p class="testimonial-text">"El diseño de cejas es espectacular. Gelly tiene un talento increíble y el resultado queda súper natural. Ya son 2 años viniendo aquí."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">CR</div>
+        <div class="testimonial-info">
+          <div class="ti-name">Carolina Ríos</div>
+          <div class="ti-service">Diseño de Cejas</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card fade-up">
+      <div class="testimonial-stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <p class="testimonial-text">"La vacuoterapia me encantó. Noté resultados desde la primera sesión. El ambiente del estudio es súper relajante y profesional."</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">AP</div>
+        <div class="testimonial-info">
+          <div class="ti-name">Andrea Paredes</div>
+          <div class="ti-service">Vacuoterapia Corporal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA ============ -->
+<section class="contact-cta" id="contacto">
+  <div class="contact-cta-inner fade-up">
+    <div class="contact-cta-text">
+      <h2>¿Lista para transformar tu piel?</h2>
+      <p>Agenda tu consulta gratuita y descubre el tratamiento ideal para ti. Estamos aquí para ayudarte.</p>
+    </div>
+    <div class="contact-cta-buttons">
+      <a href="https://wa.me/51996238939?text=Hola%20Gelly%2C%20quiero%20agendar%20una%20cita%20%F0%9F%92%86%E2%80%8D%E2%99%80%EF%B8%8F" target="_blank" class="btn-whatsapp" id="whatsappCTA">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escribir por WhatsApp
+      </a>
+      <a href="#agendar" class="btn-outline-white">Agendar Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-icon"></div>
+        <div class="logo-text">
+          <span class="brand">Gelly</span>
+          <span class="tagline">Skin Studio</span>
+        </div>
+      </div>
+      <p>Elevamos la confianza que hay en ti. 9 años dedicados al cuidado de tu piel y tu imagen en Lima.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/gelly.skin.studio/" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@gelly.skin.studio" target="_blank" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+        <a href="https://wa.me/51996238939" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Tratamientos</h4>
+      <ul>
+        <li><a href="#tratamientos">Faciales</a></li>
+        <li><a href="#tratamientos">Corporales</a></li>
+        <li><a href="#tratamientos">Diseño de Cejas</a></li>
+        <li><a href="#tratamientos">Lifting de Pestañas</a></li>
+        <li><a href="#tratamientos">Manicure & Pedicure</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#resultados">Galería</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#agendar">Agendar Cita</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contacto</h4>
+      <div class="footer-contact-item">
+        <span class="fci-icon">📍</span>
+        <span>Madre Selva 190-B, Lima 15007, Perú</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="fci-icon">📞</span>
+        <span>+51 996 238 939</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="fci-icon">🕐</span>
+        <span>Lun - Vie: 10:30am — 9:00pm</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="fci-icon">🕐</span>
+        <span>Sábados: 9:00am — 9:00pm</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="fci-icon">🕐</span>
+        <span>Domingos: Previa cita</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="fci-icon">📷</span>
+        <span>@gelly.skin.studio</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>© 2026 Gelly Skin Studio. Todos los derechos reservados.</span>
+      <span>Diseñado con 💚 en Lima</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float" id="whatsappFloat">
+  <div class="whatsapp-bubble">¿Tienes dudas? ¡Escríbenos ahora! 💬</div>
+  <a href="https://wa.me/51996238939?text=Hola%20Gelly%2C%20tengo%20una%20consulta%20%F0%9F%98%8A" target="_blank" class="whatsapp-float-btn" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="app.js"></script>
+</body>
+</html>
